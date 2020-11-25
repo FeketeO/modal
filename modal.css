@@ -1,0 +1,112 @@
+
+html {
+    background-color: rgb(112, 133, 151);
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contaniner {
+    display: flex;
+    justify-content: center;
+}
+.open_modal {
+    background-color: rgb(44, 42, 165);
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.btn {
+    border: transparent;
+    border-radius:25px;
+    color: rgb(19, 17, 17);
+    margin: .25rem;
+    padding: .5rem 1.5rem;
+    display: flex-end
+    
+}
+
+.modal_container {
+    border: 2px solid rgb(45, 45, 70);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}  
+
+.modal--fade-in {
+    animation: fadeIn .4s;
+ }
+
+ @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+ .modal--show {
+    display: flex;
+}
+
+.modal--fade-out {
+    animation: fadeIn .4s;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes fadeOut {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.modal_footer {
+        display: flex;
+        justify-content: flex-end;
+}
+    
+.modal_overlay {
+    background: rgba(233, 221, 59, 0.25);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+}
+
+.modal_content {
+
+    box-shadow: 2 2 2 black;
+    background-color: blanchedalmond;
+    padding: 2rem;
+} 
+
+.modal_close {
+    float: right;
+    border: none;
+    font-size: 1rem;
+}
+.btn--green {
+    background-color: rgb(63, 219, 63);
+    font-size: .7rem;
+}
+
+.btn--red {
+    background-color: rgb(235, 34, 27);
+    font-size: .7rem;
